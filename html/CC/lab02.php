@@ -10,12 +10,17 @@
   아래 항목을 채워주세요.<br>
 
     <h4>신상 정보 : </h4>
-    이름
-    <input type="text" name="이름" value=""><br>
-    전화번호
-    <input type="text" name="전화번호" value=""><br>
-    이메일주소
-    <input type="text" name="전화번호" value="">
+    <table>
+    <tr>
+      <td>이름</td>
+      <td><input type="text" name="이름" value=""></td></tr>
+    <tr>
+      <td>전화번호</td>
+      <td><input type="text" name="전화번호" value=""></td></tr>
+    <tr>
+      <td>이메일주소</td>
+      <td><input type="text" name="전화번호" value=""></td></tr>
+  </table>
 
     <h3>어떤 경로로 알게 되었습니까?</h3>
     <input type="radio" name="경로" value="기사">기사<br>
@@ -42,4 +47,5 @@
     <br><br><button>submit</button> <br>
 
 
+    <p style="text-align:center"><a href="./index.php">홈으로</a>
   </html>

@@ -31,6 +31,8 @@
   <p class="mes" id="c5-2">종소리 울려라 종소리 울려</p>
 </div>
 
+  <p style="text-align:center"><a href="./index.php">홈으로</a>
+
 </body>
 </html>
 

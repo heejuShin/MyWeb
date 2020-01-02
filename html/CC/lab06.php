@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 </head>
 <body>
   <p id="timer">00:00:00</p>
@@ -13,6 +14,8 @@
   </canvas>
 
   <p id="demo"></p>
+
+  <p style="text-align:center"><a href="./index.php">홈으로</a>
 </body>
 </html>
 

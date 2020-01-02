@@ -66,7 +66,7 @@
   </p>
   </form>
   <br>
-  <p align=center id = "time"></p><br>
+  <p align=center id = "time"></p>
   <p align=center> <button id='add' onclick='addWord()'>단어 추가</button></p>
   <div id="plus" align=center></div>
   <div id="word" hidden>
@@ -75,6 +75,8 @@
     <button onclick=remove(this)>삭제</button><br><br>
   </div>
 </form>
+
+  <p style="text-align:center"><a href="./index.php">홈으로</a>
 </body>
 </html>
 
@@ -87,13 +89,14 @@ var dateresult="";
 var words=date.split(' ');
 words=words[4].split(':');
 if(words[0]>12){
-  dateresult=dateresult+"오후 "+words[0]-12;
+  dateresult=dateresult+"오후 "+(words[0]-12);
 }
 else{
   dateresult=dateresult+"오전 "+words[0];
 }
 dateresult=dateresult+":"+words[1]+":"+words[2];
 document.getElementById('time').innerHTML=dateresult;
+//document.getElementById('time').innerHTML=(12<words[0]);
 var wordcount=0;
 
 function addWord(){

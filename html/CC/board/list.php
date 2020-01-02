@@ -63,5 +63,7 @@
    <button>검색</button>
 </select>
 </div>
+
+  <p style="text-align:center"><a href="../index.php">홈으로</a>
 </body>
 </html>
