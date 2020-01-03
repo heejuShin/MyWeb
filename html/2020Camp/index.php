@@ -64,9 +64,18 @@
 
       <div class="element">
       <h2>DAY6</h2>
-      <h4>01.01.목</h4>
+      <h4>01.02.목</h4>
       <button><a href="./JS/js_ex2.php">JS<br>DOM</a></button>
       <button><a href="./JS/dynamic1.php">Dyna<br>mic1</a></button>
+      <button><a href="./JS/dynamic2.php">Dyna<br>mic2</a></button>
+      </div>
+
+      <div class="element">
+      <h2>DAY7</h2>
+      <h4>01.03.금</h4>
+      <button><a href="./JS/js_ex3.php">JS<br>BOM</a></button>
+      <button><a href="./ajax/index.html">JS<br>ajax</a></button>
+      <button style="font-size:0.75em"<a href="">검색<br>기능구현</a></button>
       </div>
   </div>
   <br>

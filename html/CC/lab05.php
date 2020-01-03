@@ -74,7 +74,6 @@
     <input type="text" value="뜻"><br>
     <button onclick=remove(this)>삭제</button><br><br>
   </div>
-</form>
 
   <p style="text-align:center"><a href="./index.php">홈으로</a>
 </body>

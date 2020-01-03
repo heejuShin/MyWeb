@@ -61,7 +61,7 @@
         margin:20px;
       }
       footer{
-        height:13%;
+        height:10%;
         background:red;
         margin:1%;
       }

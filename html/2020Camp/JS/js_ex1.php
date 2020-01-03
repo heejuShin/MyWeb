@@ -166,12 +166,13 @@
       document.getElementById("object").innerHTML = "The car type is " + car.type;
       </script>
     <div class="col-sm-4">
-      <h3>Inline Tag</h3>
+      <h3></h3>
       <p></p>
     </div>
   </div>
 </div>
 
+<!--
 <div class="container">
   <div class="row">
     <div class="col-sm-4">
@@ -188,61 +189,7 @@
       <p></p>
     </div>
   </div>
-</div>
-
-<div class="container">
-  <div class="row">
-    <div class="col-sm-4">
-      <h3>Form</h3>
-      <p></p>
-    </div>
-    <div class="col-sm-4">
-      <h3>Block-level Tag</h3>
-      <p>
-      </p>
-    </div>
-    <div class="col-sm-4">
-      <h3>Inline Tag</h3>
-      <p></p>
-    </div>
-  </div>
-</div>
-
-<div class="container">
-  <div class="row">
-    <div class="col-sm-4">
-      <h3>Form</h3>
-      <p></p>
-    </div>
-    <div class="col-sm-4">
-      <h3>Block-level Tag</h3>
-      <p>
-      </p>
-    </div>
-    <div class="col-sm-4">
-      <h3>Inline Tag</h3>
-      <p></p>
-    </div>
-  </div>
-</div>
-
-<div class="container">
-  <div class="row">
-    <div class="col-sm-4">
-      <h3>Form</h3>
-      <p></p>
-    </div>
-    <div class="col-sm-4">
-      <h3>Block-level Tag</h3>
-      <p>
-      </p>
-    </div>
-    <div class="col-sm-4">
-      <h3>Inline Tag</h3>
-      <p></p>
-    </div>
-  </div>
-</div>
+</div>-->
 
 
 <p style="text-align:center"><a href="../index.php">홈으로</a>

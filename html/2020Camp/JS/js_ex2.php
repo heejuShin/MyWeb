@@ -273,79 +273,45 @@
 
   </div>
 </div>
+<br><br>
 
 <div class="container">
   <div class="row">
     <div class="col-sm-4">
       <h3>DOM Event</h3>
-      <p>document.getElementById("myBtn").onclick=functionName;</p>
-      <p>document.getElementById("myBtn").addEventListener("click",functionName);</p>
+      <p>document.getElementById("myBtn").onclick<br>=functionName;</p>
+      <p>document.getElementById("myBtn").<br>addEventListener("click",functionName);</p>
     </div>
     <div class="col-sm-4">
-      <h3>Block-level Tag</h3>
+      <h3>DOM nodes</h3>
       <p>
+        <img src="https://www.w3schools.com/js/pic_htmltree.gif" width=300 height=200>
       </p>
     </div>
     <div class="col-sm-4">
-      <h3>Inline Tag</h3>
-      <p></p>
+      <h3>JavaScript HTML DOM!</h3>
+      <p>Hello World!</p>
+
+      <p>Hello Norway!</p>
+
+      <p>Click the button to change the color of all p elements.</p>
+
+      <button onclick="myFunction4()">Try it</button>
+
+      <script>
+      function myFunction4() {
+        var myNodelist = document.querySelectorAll("p");
+        var i;
+        for (i = 0; i < myNodelist.length; i++) {
+          myNodelist[i].style.color = "dodgerblue";
+        }
+      }
+      </script>
     </div>
   </div>
 </div>
 
-<div class="container">
-  <div class="row">
-    <div class="col-sm-4">
-      <h3>Form</h3>
-      <p></p>
-    </div>
-    <div class="col-sm-4">
-      <h3>Block-level Tag</h3>
-      <p>
-      </p>
-    </div>
-    <div class="col-sm-4">
-      <h3>Inline Tag</h3>
-      <p></p>
-    </div>
-  </div>
-</div>
 
-<div class="container">
-  <div class="row">
-    <div class="col-sm-4">
-      <h3>Form</h3>
-      <p></p>
-    </div>
-    <div class="col-sm-4">
-      <h3>Block-level Tag</h3>
-      <p>
-      </p>
-    </div>
-    <div class="col-sm-4">
-      <h3>Inline Tag</h3>
-      <p></p>
-    </div>
-  </div>
-</div>
-
-<div class="container">
-  <div class="row">
-    <div class="col-sm-4">
-      <h3>Form</h3>
-      <p></p>
-    </div>
-    <div class="col-sm-4">
-      <h3>Block-level Tag</h3>
-      <p>
-      </p>
-    </div>
-    <div class="col-sm-4">
-      <h3>Inline Tag</h3>
-      <p></p>
-    </div>
-  </div>
-</div>
 
 
 <p style="text-align:center"><a href="../index.php">홈으로</a>
