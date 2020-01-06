@@ -209,17 +209,20 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-4">
-      <h3>Form</h3>
-      <p></p>
-    </div>
-    <div class="col-sm-4">
-      <h3>Block-level Tag</h3>
+      <h3>AJAX - Server Response</h3>
       <p>
+        이 readyState속성은 XMLHttpRequest의 상태를 유지합니다.
+        <br>
+        이 onreadystatechange속성은 readyState가 변경 될 때 실행될 함수를 정의합니다.
+        <br>
+        status속성과 statusText속성은 XMLHttpRequest의 객체의 상태를 보유하고 있습니다.
       </p>
     </div>
     <div class="col-sm-4">
-      <h3>Inline Tag</h3>
-      <p></p>
+      <h3>The onreadystatechange Property</h3>
+      <p>
+        <img width="800" alt="스크린샷 2020-01-06 오후 3 47 55" src="https://user-images.githubusercontent.com/49302519/71800613-eb104e80-309b-11ea-89f8-11a128f6fd15.png">
+      </p>
     </div>
   </div>
 </div>
@@ -227,8 +230,74 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-4">
-      <h3>Form</h3>
-      <p></p>
+      <h3>The XMLHttpRequest Object</h3>
+      <button type="button" onclick="loadDoc11()">Get my CD collection</button>
+      <br><br>
+      <table id="demo3"></table>
+
+      <script>
+      function loadDoc11() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+            myFunction11(this);
+          }
+        };
+        xhttp.open("GET", "https://www.w3schools.com/js/cd_catalog.xml", true);
+        xhttp.send();
+      }
+      function myFunction11(xml) {
+        var i;
+        var xmlDoc = xml.responseXML;
+        var table="<tr><th>Artist</th><th>Title</th></tr>";
+        var x = xmlDoc.getElementsByTagName("CD");
+        for (i = 0; i <x.length; i++) {
+          table += "<tr><td>" +
+          x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue +
+          "</td><td>" +
+          x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue +
+          "</td></tr>";
+        }
+        document.getElementById("demo3").innerHTML = table;
+      }
+      </script>
+
+
+    </div>
+    <div class="col-sm-4">
+      <h3>Server Response Properties</h3>
+      <p><img width="700" alt="스크린샷 2020-01-06 오후 3 50 08" src="https://user-images.githubusercontent.com/49302519/71800739-3b87ac00-309c-11ea-8c38-f127ec8204dd.png"><br><br><img width="700" alt="스크린샷 2020-01-06 오후 3 50 33" src="https://user-images.githubusercontent.com/49302519/71800755-493d3180-309c-11ea-86b0-96fc6b6da4b3.png"></p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Server Response Methods</h3>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>AJAX PHP</h3>
+      <h5>Start typing a name in the input field below:</h5>
+
+      <p>Suggestions: <span id="txtHint"></span></p>
+
+      <p>First name: <input type="text" id="txt1" onkeyup="showHint(this.value)"></p>
+
+      <script>
+      function showHint(str) {
+        var xhttp;
+        if (str.length == 0) {
+          document.getElementById("txtHint").innerHTML = "";
+          return;
+        }
+        xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("txtHint").innerHTML = this.responseText;
+          }
+        };
+        xhttp.open("GET", "gethint.php?q="+str, true);
+        xhttp.send();
+      }
     </div>
     <div class="col-sm-4">
       <h3>Block-level Tag</h3>
