@@ -74,8 +74,16 @@
       <h2>DAY7</h2>
       <h4>01.03.금</h4>
       <button><a href="./JS/js_ex3.php">JS<br>BOM</a></button>
-      <button><a href="./ajax/index.html">JS<br>ajax</a></button>
+      <button><a href="./ajax/aj_ex1.php">JS<br>ajax</a></button>
+      <!--<button><a href="./ajax/index.html">JS<br>ajax</a></button>-->
       <button style="font-size:0.75em"<a href="">검색<br>기능구현</a></button>
+      </div>
+  </div>
+  <div class="flex">
+      <div class="element">
+      <h2>DAY8</h2>
+      <h4>01.06.월</h4>
+      <button><a href="./JQuery/jq_ex1.php">JQuery<br>Note</a></button>
       </div>
   </div>
   <br>
