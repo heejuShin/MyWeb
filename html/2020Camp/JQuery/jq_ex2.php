@@ -24,7 +24,7 @@
 </head>
 <body>
 <div class="jumbotron text-center">
-  <h1>JQuery Exercise 2<</h1>
+  <h1>JQuery Exercise 2</h1>
   <p>2020 web camp</p>
 </div>
 
@@ -356,6 +356,110 @@
     </div>
   </div>
 </div>
+<br><Br>
+<div class="container">
+  <h2 style="text-align:center">jQuery AJAX</h2><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>What is AJAX?</h3>
+      <p>
+        AJAX는 전체 페이지를 다시로드하지 않고도 서버와 데이터를 교환하고 웹 페이지의 일부를 업데이트하는 기술입니다.<br><br>
+        AJAX = Asynchronous JavaScript and XML.<br><br>
+
+        In short; AJAX is about loading data in the background and display it on the webpage, without reloading the whole page.<br><br>
+
+        AJAX를 사용하는 애플리케이션의 예 : Gmail, Google Maps, Youtube 및 Facebook 탭.
+
+      </p>
+    </div>
+    <div class="col-sm-4">
+      <h3>What About jQuery and AJAX?</h3>
+      <p>
+        jQuery provides several methods for AJAX functionality.<br><br>
+
+    With the jQuery AJAX methods, you can request text, HTML, XML, or JSON from a remote server using both HTTP Get and HTTP Post <br>- And you can load the external data directly into the selected HTML elements of your web page!
+      </p>
+    </div>
+    <div class="col-sm-4">
+      <h3>jQuery load() Method</h3>
+      <p><b>Syntax:</b><br>
+        <code>$(selector).load(URL,data,callback);</code><br>
+
+        example:<br>
+        <textarea rows=1 cols=30 placeholder="$('#div1').load('demo_test.txt');"></textarea><br>
+        특정 부분만 골라오기<br>
+        <textarea rows=1 cols=30 placeholder="$('#div1').load('demo_test.txt #p1');"></textarea>
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>Example</h3>
+      <script>
+      $(document).ready(function(){
+        $("#button").click(function(){
+          $("#div134").load("./demo_text.txt");
+        });
+      });
+      </script>
+
+      <div id="div134"><h4>Let jQuery AJAX Change This Text</h4></div>
+
+      <button id="button">Get External Content</button>
+    </div>
+    <div class="col-sm-4">
+      <h3><br></h3>
+      <p>
+        선택적 콜백 매개 변수는 load()메소드 완료 시 실행할 콜백 함수를 지정합니다 .<br> 콜백 함수는 다른 매개 변수를 가질 수 있습니다.<br>
+        <ul>
+        <li>responseTxt</li> -호출이 성공하면 결과 컨텐츠를 포함합니다.
+        <li>statusTxt</li> -통화 상태를 포함
+        <li>xhr</li> -XMLHttpRequest 객체를 포함
+      </ul>
+      </p>
+    </div>
+    <div class="col-sm-4">
+      <h3>HTTP Request: GET vs. POST</h3>
+      <p>
+        Two commonly used methods for a request-response between a client and server are: GET and POST.<br>
+        <ul>
+        <li>GET</li> - Requests data from a specified resource
+        <li>POST</li> - Submits data to be processed to a specified resource
+      </ul>
+      </p>
+    </div>
+  </div>
+</div>
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>jQuery $ .get () 메소드</h3>
+      <p>이 $.get()메소드는 HTTP GET 요청으로 서버에서 데이터를 요청합니다.<br>
+      <b>Syntax:</b>
+      <code>$.get(URL,callback);</code><Br>
+    </p>
+    </div>
+    <div class="col-sm-4">
+      <h3>jQuery $ .post () 메소드</h3>
+      <p>이 $.post()메소드는 HTTP POST 요청을 사용하여 서버에서 데이터를 요청합니다.<br>
+      <b>Syntax:</b>
+      <code>$.post(URL,data,callback);</code><Br>
+    </div>
+    <div class="col-sm-4">
+      <h3>jQuery AJAX 레퍼런스</h3>
+      <p>
+        모든 jQuery AJAX 메소드에 대한 전체 개요를 보려면 <a href="https://www.w3schools.com/jquery/jquery_ref_ajax.asp">jQuery AJAX Reference</a> 로 이동하십시오 .
+
+
+      </p>
+    </div>
+  </div>
+</div>
+<br><Br><Br>
 <!--
 <div class="container">
   <div class="row">

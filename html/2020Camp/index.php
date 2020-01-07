@@ -89,8 +89,10 @@
       <h2>DAY9</h2>
       <h4>01.07.화</h4>
       <button><a href="./JQuery/jq_ex2.php">JQuery<br>Note2</a></button>
-      <button><a href="./JQuery/jq_ex2.php">Dyna<br>mic3</a></button>
-      <button><a href="./JQuery/jq_ex2.php">Dyna<br>mic3</a></button>
+      <button><a href="./JQuery/jquery_accordion.php">JQuery<br>EX2</a></button>
+      <button><a href="./JQuery/dynamic1.php">Dyna<br>mic1</a></button>
+      <button><a href="./JQuery/dynamic2.php">Dyna<br>mic2</a></button>
+      <button><a href="./JQuery/dynamic3.php">Dyna<br>mic3</a></button>
       </div>
   </div>
   <br>
