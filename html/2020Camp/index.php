@@ -85,6 +85,13 @@
       <h4>01.06.월</h4>
       <button><a href="./JQuery/jq_ex1.php">JQuery<br>Note</a></button>
       </div>
+      <div class="element">
+      <h2>DAY9</h2>
+      <h4>01.07.화</h4>
+      <button><a href="./JQuery/jq_ex2.php">JQuery<br>Note2</a></button>
+      <button><a href="./JQuery/jq_ex2.php">Dyna<br>mic3</a></button>
+      <button><a href="./JQuery/jq_ex2.php">Dyna<br>mic3</a></button>
+      </div>
   </div>
   <br>
   comming soon...
