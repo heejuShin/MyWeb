@@ -16,9 +16,15 @@ source code
 
 https://github.com/heejuShin/MyWeb/blob/master/JSP/Hello/WebContent/tutorial.jsp
 
+예제별로 보려면
+
+https://github.com/heejuShin/MyWeb/tree/master/JSP/Hello/WebContent
+
 ---------------------------
 
 ###### 개발환경 설치 방법 작성 제출
+
+https://dynalist.io/d/7zzOpsKHCQVuuximoW4Yt5gb
 
 ---------------------------
 
