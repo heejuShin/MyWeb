@@ -232,7 +232,7 @@ table, th, td {
 			driver=application.getInitParameter("dname");<br>
 			out.print("driver name is="+driver);<br> <Br> %>
 		</code>
-	</div>
+	</div><br>
 	Output
 	<br>
 	<img src="https://static.javatpoint.com/images/jsp/config1.jpg">
@@ -264,7 +264,7 @@ table, th, td {
 				out.print("Hello " + name3);
 			%>
 		</code>
-	</div>
+	</div><br>
 	Output
 	<br>
 	<img src="https://static.javatpoint.com/images/jsp/session1.jpg">
