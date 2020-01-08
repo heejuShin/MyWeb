@@ -248,7 +248,7 @@ table, th, td {
 			&lt;html><br> &lt;body><br> &lt;%<br> <br> String
 			name=request.getParameter("uname"); <br> out.print("Welcome
 			"+name); <br> <br> session.setAttribute("user",name); <br>
-			<br> &lt;a href="second.jsp">second jsp page&lt;/a> <br> %>
+			<br> %><br><br> &lt;a href="second.jsp">second jsp page&lt;/a>
 			&lt;/body><br> &lt;/html>
 		</code>
 	</div>
@@ -309,8 +309,9 @@ table, th, td {
 			<br>
 
 			pageContext.setAttribute("user",name,PageContext.SESSION_SCOPE);<br>
+			<br> %>
 			<br> &lt;a href="second.jsp">second jsp page&lt;/a> <br>
-			<br> %> <br> &lt;/body> <br> &lt;/html> <br>
+			<br> &lt;/body> <br> &lt;/html> <br>
 		</code>
 	</div>
 
@@ -374,7 +375,6 @@ table, th, td {
 	</code></div><br>
 	To get the full example, click here 
 	<a href="https://www.javatpoint.com/exception-handling-in-jsp">
-	full example of exception handling in jsp.</a><Br>
-	But, it will be better to learn it after the JSP Directives.
+	full example of exception handling in jsp.</a> But, it will be better to learn it after the JSP Directives.
 </body>
 </html>
