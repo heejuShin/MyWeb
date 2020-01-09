@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Tutorial</title>
+<title>Tutorial1</title>
 <style>
 table, th, td {
 	border: 1px solid black;
