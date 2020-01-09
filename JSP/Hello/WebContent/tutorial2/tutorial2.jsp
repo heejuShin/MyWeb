@@ -359,10 +359,179 @@ h4.sub {
 
 	<br><br>
 	<h3 style="color: #a18ad4;">Action Elements</h3>
-
+	
+	Action 태그는 페이지간 플로우를 제어하고 Java Bean을 사용하는데 사용됩니다.<br> 
+	<br> The Jsp action tags are given below:<br>
+	<br>
+	<table>
+	<tr><th>JSP Action Tags</th><th>Description</th></tr>
+	<tr><td>jsp: forward</td><td>forwards the request and response to another resource.</td></tr>
+	<tr><td>jsp: include</td><td>includes another resource.</td></tr>
+	<tr><td>jsp: useBean</td><td>creates or locates bean object.</td></tr>
+	<tr><td>jsp: setProperty</td><td>sets the value of property in bean object.</td></tr>
+	<tr><td>jsp: getProperty</td><td>prints the value of property of the bean.</td></tr>
+	<tr><td>jsp: plugin</td><td>embeds another components such as applet.</td></tr>
+	<tr><td>jsp: param</td><td>sets the parameter value. It is used in forward and include mostly.</td></tr>
+	<tr><td>jsp: fallback</td><td>can be used to print the message if plugin is working. It is used in jsp:plugin.</td></tr>
+	</table>
+	<br>
+	jsp : useBean, jsp : setProperty 및 jsp : getProperty 태그는 Bean 개발에 사용됩니다.<br>
+	그래서 우리는이 태그들을 bean developmentement에서 볼 것입니다.<br>
+	<br><br>
 	<h4>jsp: forward</h4>
+	jsp : forward 조치 태그는 요청을 다른 자원으로 전달하는 데 사용되며 jsp, html 또는 다른 자원 일 수 있습니다.
+	<br>
+	<h4 class="sub">=> forward action tag <span style="background-color:yellow">without</span> parameter</h4>
+	<b>Syntax:</b><br>
+	<div class="code">
+	<code>
+	&lt;jsp:forward page="relativeURL | &lt;%= expression %>" />  
+	</code>
+	</div>
+	<br> Example:
+	이 예에서는 요청을 printdate.jsp 파일로 전달합니다.
+	<br><b>index.jsp</b>
+	<div class="code">
+		<code>
+			&lt;html> <br> 
+			&lt;body> <br> <br> 
+&lt;h2>this is index page&lt;/h2>  <br><br>
+  
+&lt;jsp:forward page="printdate.jsp" />  <br>
+			<br>&lt;/body> <br>
+			&lt;/html> <br>
+		</code>
+	</div>
+	<br><b>printdate.jsp</b>
+	<div class="code">
+		<code>
+			&lt;html> <br> 
+			&lt;body> <br> <br>
+			&lt;% out.print("Today is:"+java.util.Calendar.getInstance().getTime()); %>   
+			<br>&lt;/body> <br>
+			&lt;/html> <br>
+		</code>
+	</div>
+	<br> Result:
+	<br>
+	<div class="result">
+	<a href="./index1.jsp">Go to index.jsp</a>
+	</div>
+	<br>
+	<h4  class="sub">=>forward action tag <span style="background-color:yellow">with</span> parameter</h4>
+	<b>Syntax:</b><br>
+	<div class="code">
+	<code>
+	&lt;jsp:forward page="relativeURL | &lt;%= expression %>">  
+	&lt;jsp:param name="parametername" value="parametervalue | &lt;%=expression%>" />  
+	&lt;/jsp:forward>  
+	</code>
+	</div>
+	<br> Example:
+	이 예에서는 매개 변수를 사용하여 요청을 printdate.jsp 파일로 전달하고 printdate.jsp 파일은 날짜 및 시간과 함께 매개 변수 값을 인쇄합니다.
+	<br><br><b>index.jsp</b>
+	<div class="code">
+		<code>
+			&lt;html> <br> 
+			&lt;body> <br> <br> 
+&lt;h2>this is index page&lt;/h2>  <br><br>
+  
+&lt;jsp:forward page="printdate.jsp" />  <br>
+&lt;jsp:param name="name" value="javatpoint.com" />  
+&lt;/jsp:forward>  
+			<br>&lt;/body> <br>
+			&lt;/html> <br>
+		</code>
+	</div>
+	<br><b>printdate.jsp</b>
+	<div class="code">
+		<code>
+			&lt;html> <br> 
+			&lt;body> <br> <br>
+			&lt;% out.print("Today is:"+java.util.Calendar.getInstance().getTime()); %>   <br>
+			&lt;%= request.getParameter("name") %>  
+			<br>&lt;/body> <br>
+			&lt;/html> <br>
+		</code>
+	</div>
+	<br> Result:
+	<br>
+	<div class="result">
+	<a href="./index2.jsp">Go to index.jsp</a>
+	</div>
+	<br>
+	<br>	
+	
+	
+	
+	
 	<h4>jsp: include</h4>
+	jsp: include는 다른 자원들의 콘텐츠(jsp, html, servlet)를 포함하도록 사용된다.<br>
+	jsp 포함 조치 태그에는 요청시 자원이 포함되므로 나중에 변경 될 수 있으므로 동적 페이지에 더 좋습니다.<br>
+	jsp : include 태그는 정적 페이지와 동적 페이지를 포함하는 데 사용할 수 있습니다.<br><br>
+	
+	<b>jsp:include action tag의 장점</b><br>
+	코드 재사용 성 : 모든 페이지에 머리글 및 바닥 글 페이지를 포함하는 등 여러 페이지를 사용할 수 있습니다. 따라서 많은 시간이 절약됩니다.<br><br>
+	
+	<b>jsp includ directive와 include의 차이점</b><br>
+	<table>
+	<tr><th>JSP include directive</th><th>JSP include action</th></tr>
+	<tr><td>includes resource at translation time.</td><td>includes resource at request time.</td></tr>
+	<tr><td>better for static pages.</td><td>better for dynamic pages.</td></tr>
+	<tr><td>includes the original content in the generated servlet.</td><td>calls the include method.</td></tr>
+	</table><br>
+	
+	<h4 class="sub">=> include action tag <span style="background-color:yellow">without</span> parameter</h4>
+	<b>Syntax:</b><br>
+	<div class="code">
+	<code>
+	&lt;jsp:include page="relativeURL | &lt;%= expression %>" />  
+	</code>
+	</div>
+	<br> Example:
+	이 예에서 index.jsp 파일에는 printdate.jsp 파일의 내용이 포함됩니다.
+	<br><b>index.jsp</b>
+	<div class="code">
+		<code>
+			&lt;h2>this is index page&lt;/h2>  
+			  
+			&lt;jsp:include page="printdate.jsp" />  
+			  
+			&lt;h2>end section of index page&lt;/h2>  
+		</code>
+	</div>
+	<br><b>printdate.jsp</b>
+	<div class="code">
+		<code>
+		&lt;% out.print("Today is:"+java.util.Calendar.getInstance().getTime()); %>  
+		</code>
+	</div>
+	<br> Result:
+	<br>
+	<div class="result">
+	<a href="./index3.jsp">Go to index.jsp</a>
+	</div>
+	<img src="https://static.javatpoint.com/jsppages/images/jspincludetag.png">
+	<br>
+	<h4  class="sub">=>include action tag <span style="background-color:yellow">with</span> parameter</h4>
+	<b>Syntax:</b><br>
+	<div class="code">
+	<code>
+		&lt;jsp:include page="relativeURL | &lt;%= expression %>">  
+		&lt;jsp:param name="parametername" value="parametervalue | &lt;%=expression%>" />  
+		&lt;/jsp:include>  
+	</code>
+	</div>
+	<br>
+	<br>	
+
 	<h4>Java Been class</h4>
+	JavaBean은 다음 규칙을 따라야하는 Java 클래스입니다.<br>
+	<ul>
+	<li>인수가없는 생성자가 있어야합니다.</li>
+	<li>직렬화 가능해야합니다.</li>
+	<li>getter 및 setter 메소드라고하는 특성 값을 설정하고 가져 오는 메소드를 제공해야합니다.</li>
+	</ul><br><br>
 	<h4>jsp: useBean</h4>
 	<h4>set & getProperty</h4>
 	<h4>Displaying applet in JSP</h4>
