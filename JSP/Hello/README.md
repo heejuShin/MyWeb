@@ -34,3 +34,8 @@ https://github.com/heejuShin/MyWeb/blob/master/JSP/Hello/WebContent/hello.jsp
 
 <img width="497" alt="스크린샷 2020-01-08 오후 3 25 37" src="https://user-images.githubusercontent.com/49302519/71955277-2ee58e00-322b-11ea-88df-c0a8b23b93da.png">
 
+## 2020.01.09 HomeWork
+
+https://github.com/heejuShin/MyWeb/tree/master/JSP/Hello/WebContent/tutorial2
+
+
