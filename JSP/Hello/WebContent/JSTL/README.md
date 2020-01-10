@@ -10,11 +10,11 @@
 
 미리보기
 
-https://htmlpreview.github.io/?https://github.com/heejuShin/MyWeb/tree/master/JSP/Hello/WebContent/JSTL
+https://htmlpreview.github.io/?https://github.com/heejuShin/MyWeb/blob/master/JSP/Hello/WebContent/JSTL/tutorial.jsp
 
 source code
 
-https://github.com/heejuShin/MyWeb/tree/master/JSP/Hello/WebContent/JSTL
+https://github.com/heejuShin/MyWeb/tree/master/JSP/Hello/WebContent/JSTL/tutorial.jsp
 
 예제별로 보려면
 
