@@ -18,7 +18,7 @@ https://github.com/heejuShin/MyWeb/blob/master/JSP/Hello/WebContent/tutorial2/tu
 
 예제별로 보려면
 
-https://github.com/heejuShin/MyWeb/tree/master/JSP/Hello/WebContent/tutorial2
+위 파일들을 참고하세요!
 
 ------------------------------
 
