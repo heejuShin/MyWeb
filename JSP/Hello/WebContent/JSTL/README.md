@@ -24,7 +24,7 @@ https://github.com/heejuShin/MyWeb/tree/master/JSP/Hello/WebContent/JSTL/tutoria
 
 ###### 회원가입 예제
 
-https://github.com/heejuShin/MyWeb/tree/master/JSP/Hello/Webcontent/CRUD
+https://github.com/heejuShin/MyWeb/tree/master/JSP/Hello/WebContent/CRUD
 
 https://github.com/heejuShin/MyWeb/tree/master/JSP/Hello/src/com/javapoint
 
