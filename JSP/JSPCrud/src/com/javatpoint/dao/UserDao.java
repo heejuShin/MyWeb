@@ -9,7 +9,7 @@ public static Connection getConnection(){
 	Connection con=null;
 	try{
 		Class.forName("com.mysql.jdbc.Driver");
-		con=DriverManager.getConnection("jdbc:mysql://db4free.net:3306/pms2019?useSSL=false&serverTimezone=UTC&characterEncoding=utf8","","");
+		con=DriverManager.getConnection("jdbc:mysql://localhost:3306/test","","");
 	}catch(Exception e){System.out.println(e);}
 	return con;
 }
