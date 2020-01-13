@@ -4,11 +4,11 @@
 
 미리보기
 
-https://htmlpreview.github.io/?
+https://htmlpreview.github.io/?https://github.com/heejuShin/MyWeb/blob/master/JSP/Hello/WebContent/Development/tutorial.jsp
 
 source code
 
-ddd
+https://github.com/heejuShin/MyWeb/blob/master/JSP/Hello/WebContent/Development/tutorial.jsp
 
 --------------------------------
 
