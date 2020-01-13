@@ -1,4 +1,4 @@
-package user;
+package com.user;
  
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -14,11 +14,15 @@ public class UserDAO {
     public UserDAO() {
         try {
             //생성자
-            String dbURL="jdbc:mysql://localhost:3306/BBS?serverTimezone=UTC";                             
-            String dbID="자신의dbID";
-            String dbPassword="자신의dbPassword";
+            String dbURL="jdbc:mysql://db4free.net:3306/pms2019?useSSL=false&serverTimezone=UTC&characterEncoding=utf8";                             
+            String dbID="dughdhk321";
+            String dbPassword="gmlwn!23";
             Class.forName("com.mysql.cj.jdbc.Driver");
             conn=DriverManager.getConnection(dbURL,dbID,dbPassword);
+        }catch(Exception e) {
+            e.printStackTrace();
+        }
+    }
     public int join(User user) {
         String SQL= "INSERT INTO USER VALUES(?, ?, ?, ?, ?) ";
         try {
