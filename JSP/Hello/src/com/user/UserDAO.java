@@ -14,17 +14,19 @@ public class UserDAO {
     public UserDAO() {
         try {
             //생성자
-            String dbURL="jdbc:mysql://db4free.net:3306/pms2019?useSSL=false&serverTimezone=UTC&characterEncoding=utf8";                             
+            String dbURL="jdbc:mysql://db4free.net:3306/dughdhk321?useSSL=false&serverTimezone=UTC&characterEncoding=utf8";                             
             String dbID="dughdhk321";
-            String dbPassword="gmlwn!23";
+            String dbPassword="mypassword..It is secretㅠ0";
             Class.forName("com.mysql.cj.jdbc.Driver");
             conn=DriverManager.getConnection(dbURL,dbID,dbPassword);
         }catch(Exception e) {
             e.printStackTrace();
         }
     }
+    /*
     public int join(User user) {
-        String SQL= "INSERT INTO USER VALUES(?, ?, ?, ?, ?) ";
+        //String SQL= "INSERT INTO USER VALUES(?, ?, ?, ?, ?) ";
+    	String SQL= "INSERT INTO USER VALUES(?, ?, ?, ?, ?) ";
         try {
             pstmt = conn.prepareStatement(SQL);
             pstmt.setString(1,user.getUserID());
@@ -38,6 +40,6 @@ public class UserDAO {
             e.printStackTrace();
         }
         return -1;
-    }
+    }*/
     
 }

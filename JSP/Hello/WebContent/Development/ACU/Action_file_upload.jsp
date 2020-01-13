@@ -17,14 +17,15 @@
    File file ;
    int maxFileSize = 5000 * 1024;
    int maxMemSize = 5000 * 1024;
-   String filePath = "E:/guru99/data";
+   //String filePath = "E:/guru99/data";
+   String filePath = "/Users/heeju/Desktop/";
  
    String contentType = request.getContentType();
    if ((contentType.indexOf("multipart/form-data") >= 0)) {
  
       DiskFileItemFactory factory = new DiskFileItemFactory();
       factory.setSizeThreshold(maxMemSize);
-      factory.setRepository(new File("c:\\temp"));
+      factory.setRepository(new File("/Users/heeju/Desktop/"));
       ServletFileUpload upload = new ServletFileUpload(factory);
       upload.setSizeMax( maxFileSize );
       try{ 
@@ -40,9 +41,11 @@
                 String fileName = fi.getName();
                 boolean isInMemory = fi.isInMemory();
                 long sizeInBytes = fi.getSize();
-                file = new File( filePath + "yourFileName") ;
+                //file = new File( filePath + "yourFileName") ;
+                file = new File( filePath + fileName) ;
                 fi.write( file ) ;
                 out.println("Uploaded Filename: " + filePath + fileName + "<br>");
+                //out.println("Uploaded Filename: " + fieldName + fileName + "<br>");
             }
          }
          out.println("</body>");
