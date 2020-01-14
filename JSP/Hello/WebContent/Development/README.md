@@ -18,6 +18,6 @@ https://github.com/heejuShin/MyWeb/blob/master/JSP/Hello/WebContent/Development/
 
 https://github.com/heejuShin/MyWeb/tree/master/JSP/Hello/WebContent/Development/ACU
 
-https://github.com/heejuShin/MyWeb/tree/master/JSP/Hello/WebContent/Development/cos.jar
+https://github.com/heejuShin/MyWeb/tree/master/JSP/Hello/WebContent/uploadtest
 
 https://docs.google.com/presentation/d/1Zf42TKThDUnKlwqpqvI4hhOZBI24hisBAI9gejTXgm0/edit#slide=id.p
