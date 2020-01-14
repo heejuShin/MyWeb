@@ -1,7 +1,6 @@
 <%@page import="java.util.Enumeration"%>
 <%@page import="com.oreilly.servlet.multipart.DefaultFileRenamePolicy"%>
 <%@page import="com.oreilly.servlet.MultipartRequest"%>
-<%@page import="com.oreilly.servlet.*" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%
@@ -15,10 +14,9 @@
 	String orgfileName1 = "";
 	String orgfileName2 = "";
 	
-	//원래:String uploadPath = request.getRealPath("upload"); // upload는 폴더명 / 폴더의 경로를 구해옴
+	String uploadPath = request.getRealPath("upload"); // upload는 폴더명 / 폴더의 경로를 구해옴
 	//out.print(uploadPath);
-	String uploadPath = application.getRealPath("upload");
-	
+
 	try {
 		MultipartRequest multi = new MultipartRequest( // MultipartRequest 인스턴스 생성(cos.jar의 라이브러리)
 				request, 
@@ -27,6 +25,7 @@
 				"utf-8", // 인코딩 방식 지정
 				new DefaultFileRenamePolicy() // 중복 파일 처리(동일한 파일명이 업로드되면 뒤에 숫자 등을 붙여 중복 회피)
 		);
+
 		id = multi.getParameter("id"); // form의 name="id"인 값을 구함
 		subject = multi.getParameter("subject"); // form의 name="subject"인 값을 구함
 
@@ -45,7 +44,6 @@
 	} catch (Exception e) {
 		e.getStackTrace();
 	} // 업로드 종료
-	  
 %>
 
 <!-- 업로드 된 파일을 확인하는 폼으로 이동 / 위에서 구한 데이터를 hidden 방식으로 전송 -->
@@ -62,4 +60,3 @@
 	</form>
 </body>
 </html>
-
