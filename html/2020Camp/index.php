@@ -94,6 +94,18 @@
       <button><a href="./JQuery/dynamic2.php">Dyna<br>mic2</a></button>
       <button><a href="./JQuery/dynamic3.php">Dyna<br>mic3</a></button>
       </div>
+      <div class="element">
+      <h2>DAY10-14</h2>
+      <h4>01.08.수 ~ 01.14.화</h4>
+      <button><a href="https://github.com/heejuShin/MyWeb/tree/master/JSP/Hello">Go to<br>Github</a></button>
+      local에서 JSP 실습
+    </div>
+      <div class="element">
+        <h2>DAY15</h2>
+        <h4>01.15.수</h4>
+        <button><a href="./SQL/sql_ex1.php">SQL<br>tutorial</a></button>
+        <button><a href="./SQL/sql_ex2.php">SQL<br>Table</a></button>
+      </div>
   </div>
   <br>
   comming soon...
