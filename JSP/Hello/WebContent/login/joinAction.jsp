@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ page import="com.user.UserDAO" %>
+<%@ page import="com.user.UserDAO"%>
 <%@ page import="java.io.PrintWriter"%>
 <% request.setCharacterEncoding("UTF-8"); %>
 <jsp:useBean id="user" class="com.user.User" scope="page"/>

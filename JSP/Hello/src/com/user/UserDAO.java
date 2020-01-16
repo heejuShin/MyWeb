@@ -23,7 +23,7 @@ public class UserDAO {
             e.printStackTrace();
         }
     }
-    /*
+    
     public int join(User user) {
         //String SQL= "INSERT INTO USER VALUES(?, ?, ?, ?, ?) ";
     	String SQL= "INSERT INTO USER VALUES(?, ?, ?, ?, ?) ";
@@ -40,6 +40,6 @@ public class UserDAO {
             e.printStackTrace();
         }
         return -1;
-    }*/
+    }
     
 }
