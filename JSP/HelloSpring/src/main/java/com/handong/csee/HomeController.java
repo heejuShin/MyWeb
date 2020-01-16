@@ -28,6 +28,7 @@ public class HomeController {
 	/**
 	 * Simply selects the home view to render by returning its name.
 	 */
+	/*
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public ModelAndView home(Locale locale, ModelAndView mv) {
 		logger.info("Welcome home! The client locale is {}.", locale);
@@ -43,7 +44,7 @@ public class HomeController {
 		//model.addAttribute("serverTime", formattedDate );
 		
 		return mv;
-	}
+	}*/
 	
 	@RequestMapping(value = "/nextpage", method = RequestMethod.POST)
 	public ModelAndView nextpage(ModelAndView mv, @RequestParam("input_name") String input_name) {

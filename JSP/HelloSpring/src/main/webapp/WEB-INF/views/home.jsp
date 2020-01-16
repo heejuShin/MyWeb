@@ -20,8 +20,12 @@
 <p> [Traditional servlet method]<br>Enter your name: <input type= 'text' name="input_name"><button name="subject" type="submit">Go</button></p>
 </form>
 
-<form name="TransTest" id='tForm' method='get' action='http://localhost:8080/csee//employee-module/getAllEmployees'>
+<form name="TransTest" id='tForm' method='get' action='http://localhost:8080/csee/employee-module/getAllEmployees'>
 <p> [Hello Spring Project]<br>Enter your name: <input type= 'text' name="input_name"><button name="subject" type="submit">Go</button></p>
+</form>
+
+<form name="TransTest" id='tForm' method='get' action='http://localhost:8080/csee/mainview'>
+<p> [동작원]<br>Enter your name: <input type= 'text' name="input_name"><button name="subject" type="submit">Go</button></p>
 </form>
 
 </body>

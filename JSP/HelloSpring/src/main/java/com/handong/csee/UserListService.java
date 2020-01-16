@@ -1,5 +1,11 @@
 package com.handong.csee;
 
-public class UserListService {
+import java.util.List;
+
+import com.handong.csee.UserListResponseDTO;
+
+public interface UserListService {
 	
+	public List<UserListResponseDTO> getUserListService();
+
 }

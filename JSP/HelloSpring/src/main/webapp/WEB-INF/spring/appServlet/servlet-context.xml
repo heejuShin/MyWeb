@@ -24,9 +24,9 @@
 	<context:component-scan base-package="com.handong.csee" />
 	
 	<!-- Service 등록 -->
-	
+	<beans:bean id="userListService" class="com.handong.csee.UserListServiceImpl"/>
 	
 	<!-- DAO 등록 -->
-	
+	<beans:bean id="userListDAO" class="com.handong.csee.UserListDAOImpl"/>
 	
 </beans:beans>
