@@ -2,7 +2,7 @@
 
 <details>
   
-<summary> ## 2020.01.16 HomeWork </summary>
+<summary> 2020.01.16 HomeWork </summary>
   
 <div markdown="1">
 
@@ -33,6 +33,24 @@ https://github.com/heejuShin/MyWeb/tree/master/JSP/HelloSpring/src/main/java/com
 ----------------
 
 ###### spring controller parameter
+
+</div>
+
+<summary> 2020.01.17 HomeWork </summary>
+
+<div markdown="1">
+
+###### 1) Spring MVC CRUD Example(MySQL JDBC)
+
+###### 2) Spring + MyBatis + MySQL를 연동을 위한 설정 및 테스트
+
+https://github.com/heejuShin/MyWeb/tree/master/JSP/HelloSpring/src/test/java/com/handong/csee
+
+<img src="https://user-images.githubusercontent.com/49302519/72588332-4a434e00-393b-11ea-8ade-e5b3bcf9e8ca.png">
+
+<img src="https://user-images.githubusercontent.com/49302519/72588336-4b747b00-393b-11ea-87a7-44516070a897.png">
+
+###### 3) Spring + MyBatis 게시판 목록 실습
 
 </div>
 
