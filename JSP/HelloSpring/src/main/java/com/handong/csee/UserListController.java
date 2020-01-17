@@ -11,10 +11,11 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class UserListController {
+	
 	@Autowired
 	UserListServiceImpl userListService;
 	
-	@RequestMapping(value="/", method=RequestMethod.GET)
+	@RequestMapping(value="/user", method=RequestMethod.GET)
 	public ModelAndView home(ModelAndView mv) {
 		List<UserListResponseDTO> userlist = userListService.getUserListService();
 		

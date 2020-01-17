@@ -24,9 +24,12 @@
 <p> [Hello Spring Project]<br>Enter your name: <input type= 'text' name="input_name"><button name="subject" type="submit">Go</button></p>
 </form>
 
-<form name="TransTest" id='tForm' method='get' action='http://localhost:8080/csee/mainview'>
-<p> [동작원]<br>Enter your name: <input type= 'text' name="input_name"><button name="subject" type="submit">Go</button></p>
+<form name="TransTest" id='tForm' method='get' action='http://localhost:8080/csee/user'>
+<p> [Principle of motion]<br>Enter your name: <input type= 'text' name="input_name"><button name="subject" type="submit">Go</button></p>
 </form>
-
+<!-- 
+<a href="empform">Add Employee</a>  
+<a href="viewemp">View Employees</a>  
+-->
 </body>
 </html>
