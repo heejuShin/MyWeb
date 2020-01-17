@@ -6,13 +6,13 @@
   
 <div markdown="1">
 
-###### 용어정리
+###### 1) 용어정리
 
 http://dughdhk321.dothome.co.kr/2020Camp/Spring/sp_ex1.php
 
 ----------------
 
-###### 동작원리
+###### 2) 동작원리
 
 https://github.com/heejuShin/MyWeb/tree/master/JSP/HelloSpring/src/main/java/com/handong/csee
 
@@ -20,7 +20,7 @@ https://github.com/heejuShin/MyWeb/tree/master/JSP/HelloSpring/src/main/java/com
 
 ----------------
 
-###### Hello Spring project
+###### 3) Hello Spring project
 
 https://github.com/heejuShin/MyWeb/tree/master/JSP/HelloSpring/src/main/java/com/handong/csee
 
@@ -28,11 +28,11 @@ https://github.com/heejuShin/MyWeb/tree/master/JSP/HelloSpring/src/main/java/com
 
 ----------------
 
-###### spring controller return type
+###### 4) spring controller return type
 
 ----------------
 
-###### spring controller parameter
+###### 5) spring controller parameter
 
 </div>
 
@@ -50,7 +50,7 @@ https://github.com/heejuShin/MyWeb/tree/master/JSP/HelloSpring/src/main/java/com
 
 https://github.com/heejuShin/MyWeb/tree/master/JSP/HelloSpring/src/test/java/com/handong/csee
 
-<img src="https://user-images.githubusercontent.com/49302519/72588332-4a434e00-393b-11ea-8ade-e5b3bcf9e8ca.png">
+<img src="https://user-images.githubusercontent.com/49302519/72588332-4a434e00-393b-11ea-8ade-e5b3bcf9e8ca.png"><br>
 
 <img src="https://user-images.githubusercontent.com/49302519/72588336-4b747b00-393b-11ea-87a7-44516070a897.png">
 
