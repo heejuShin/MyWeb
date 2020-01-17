@@ -1,6 +1,10 @@
 # My first Spring project
 
-## 2020.01.16 HomeWork
+<details>
+  
+<summary> ## 2020.01.16 HomeWork </summary>
+  
+<div markdown="1">
 
 ###### 용어정리
 
@@ -29,3 +33,7 @@ https://github.com/heejuShin/MyWeb/tree/master/JSP/HelloSpring/src/main/java/com
 ----------------
 
 ###### spring controller parameter
+
+</div>
+
+</details>
