@@ -14,7 +14,7 @@
 	<!-- Root Context: defines shared resources visible to all other web components -->
 		
 	<!-- MySQL dataSource -->
-	    <bean id="dataSource"
+	    <!--  <bean id="dataSource"
 	        class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 	        <property name="driverClassName" value="com.mysql.cj.jdbc.Driver"></property>
 	        <property name="url"
@@ -22,7 +22,7 @@
 	        </property>
 	        <property name="username" value="dughdhk321"></property>
 	        <property name="password" value="gmlwn!23"></property>
-	    </bean>    		
+	    </bean>  -->  		
 		    
 	<!-- 자신의 PC(로컬)에 MySql을 설치했을 경우 
 	    <bean id="dataSource"
@@ -39,6 +39,26 @@
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="dataSource"></property>
     </bean>
+    
+  
+  
+  
+<!-- 1번에서 추가 -->  
+<bean id="ds" class="org.springframework.jdbc.datasource.DriverManagerDataSource">    
+<property name="driverClassName" value="com.mysql.jdbc.Driver"></property>    
+<property name="url" value="jdbc:mysql://db4free.net:3306/dughdhk321?useSSL=false&amp;serverTimezone=UTC"></property>    
+<property name="username" value="dughdhk321"></property>    
+<property name="password" value="gmlwn!23"></property>    
+</bean>    
+    
+<bean id="jt" class="org.springframework.jdbc.core.JdbcTemplate">    
+<property name="dataSource" ref="ds"></property>    
+</bean>    
+    
+<!--  <bean id="dao" class="com.handong.csee.EmpDao">     -->
+<!--  <property name="template" ref="jt"></property>    -->
+<!--  </bean>       -->
+<!-- 여기까지  -->
 
 	
 </beans>
